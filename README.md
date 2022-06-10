@@ -1,1 +1,5 @@
-# trabalhoexplicacao
+Nome: Wallace Maia e Giuseppe Sandrini
+
+Código escolhido: #negativo
+
+O código escolhido tem a função de transformar uma imagem em negativa, através de uma subtração. Primeiramente ele dá o valor a variável chamada "img_in", que vai ser a imagem que vai sofrer a manipulação. Para essa variável receber uma imagem ele usa a função cv2.imread. Ela carrega um arquivo de imagem e um parâmetro, no caso "1", caso ocorra algum problema na leitura da imagem, a matriz se torna uma matriz nula. Com a imagem já lida ele cria uma nova variável, chamada "img_out". Ela vai ser a variavel que vai armazenar a imagem já alterada. Para manipular a imagem ele utiliza uma subtração. Uma imagem é uma matriz de pixels com valores determinados de 1 a 255., que formam as cores. Então o valor "255" que é o branco, é subtraído, tornando todos os valores seus negativos. Ou seja, se eu retirar o 255 da cor 255, sobra a cor 0, que é o preto, assim é feita a mudança. Já que não existem valores negativos, o valor se torna positivo, com o branco subtraído. ou seja, se a cor é 100: 100-255 = -155 = 155. Depois ele imprime as duas imagens através da função "cv2_imshow". Assim temos a imagem normal, e logo após a imagem com a manipulação feita.
